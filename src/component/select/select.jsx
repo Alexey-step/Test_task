@@ -16,7 +16,7 @@ const Select = ({animationButton}) => {
   }
 
     return (
-        <div className={`form__select select ${isOpen && `select--open`}`} onClick={() => toggleList()}>
+        <div className={`form__select select ${isOpen && `select--open`}`} onClick={toggleList}>
           <span className="select__value">
             <input
               className="select__value-input"
